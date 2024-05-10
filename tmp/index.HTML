@@ -1,0 +1,158 @@
+
+<!DOCTYPE HTML>
+<html lang="en-zm">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width,maximum-scale=1.0,initial-scale=1.0,minimum-scale=0.9,user-scalable=no" name="viewport">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Option 1: Include in HTML -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <meta name="theme-color" content="">
+    <link rel="icon" href="">
+    <style>
+      #hamburger:focus {
+        outline: none;
+        border: none;
+      }
+      #hamburger {
+        outline: none;
+        border: none;
+      }
+      #side-bar-links {
+        width: 350px;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #ffffff;
+        overflow-x: hidden;
+      }
+      #side-bar-links a {
+        text-transform: uppercase;
+        text-decoration: none;
+        text-align: center;
+        padding: 8px 14px;
+        margin: 16px auto;
+        color: rgb(255, 255, 255);
+        background-color: rgb(30, 85, 167);
+        width: 240px;
+      }
+      .elem {
+        background-image: url('main.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 340px;
+        margin: 0px;
+      }
+      .cover {
+        height: 100%;
+        width: 100%;
+        margin: 0px auto;
+      }
+      .messg {
+        margin: 40px 0px 0px 0px;
+      }
+      @media only screen and (min-width: 992px) {
+        .elem {
+          width: calc(100% - 306px);
+          height: 100vh;
+        }
+        .messg {
+          margin: 200px 0px 0px 0px;
+          font-size: larger;
+        }
+      }
+    </style>
+    <title></title>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark py-3">
+      <div class="container-fluid">
+        <span class="container-fluid color-white" data-bs-toggle="collapse">
+          <span class="navbar-toggler d-lg-none" id="hamburger" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </span>
+          <a class="navbar-brand" href="#">SOOTHE HUB</a>
+          <span class="float-end d-none d-lg-flex" style="width: 240px;">
+            <span class="nav-item">
+              <a class="mx-3" href="#"><i class="bi bi-question-circle h4"></i></a>
+            </span>
+            <span class="nav-item">
+              <a class="mx-3" href="#"><i class="bi bi-chat h4"></i></a>
+            </span>
+            <span class="nav-item">
+              <a class="mx-3" href="#"><i class="bi bi-bell h4"></i></a>
+            </span>
+            <span class="nav-item">
+              <a class="mx-3" href="#"><i class="bi bi-person h4"></i></a>
+            </span>
+          </span>
+        </span>
+      </div>
+    </nav>
+    <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark" style="position: fixed; top: 45px; right: 0; left: 0; z-index: 1;">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item"></li>
+        <li class="list-group-item">Sign Up or Login</li>
+        <li class="list-group-item">My Schedules</li>
+        <li class="list-group-item">Talk to A Professional</li>
+        <li class="list-group-item">Stress Management</li>
+        <li class="list-group-item">Reviews</li>
+        <li class="list-group-item">Help</li>
+        <li class="list-group-item">Contact Us</li>
+        <li class="list-group-item">About US</li>
+      </ul>
+    </div>
+    <!--main content -->
+    <div style="display: flex;">
+      <span class="d-none d-lg-block" id="side-bar-links">
+        <br>
+        <a class="list-group-item fw-bold" style="background-color: rgb(0, 31, 78);">Home</a>
+        <a href="#" class="list-group-item">Sign Up or Login</a>
+        <a href="#" class="list-group-item">My Schedules</a>
+        <a href="#" class="list-group-item">Talk to A Professional</a>
+        <a href="#" class="list-group-item">Stress Management</a>
+        <a href="#" class="list-group-item">Reviews</a>
+        <a href="#" class="list-group-item">Help</a>
+        <a href="#" class="list-group-item">Contact Us</a>
+        <a href="#" class="list-group-item">About US</a>
+      </span>
+      <div class="bg-image elem">
+        <div class="p-3 cover opacity-75 text-bg-dark">
+          <div class="text-center messg opacity-100">
+            <h4>You are strong, capable, and deserving of care. 
+              Welcome to our community, where mental wellness meets compassion and support.
+            </h4>
+            <br>
+            <button type="button" class="btn btn-info btn-lg">Learn more</button>
+          </div>
+      </div>
+    </div>
+    <!--end of main content-->
+    <div class="bg-dark fixed-bottom py-3 d-lg-none">
+      <div class="container text-center">
+        <div class="row align-items-start">
+          <div class="col">
+            <a href=""><i class="bi bi-newspaper h4"></i></a>
+          </div>
+          <div class="col">
+            <a href=""><i class="bi bi-text-left h4"></i></a>
+          </div>
+          <div class="col">
+            <a href=""><i class="bi bi-chat h4"></i></a>
+          </div>
+          <div class="col">
+            <a href=""><i class="bi bi-bell h4"></i></a>
+          </div>
+          <div class="col">
+            <a href=""><i class="bi bi-person h4"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
